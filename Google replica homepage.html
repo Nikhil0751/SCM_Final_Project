@@ -1,0 +1,692 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title> Google</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js"
+        integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r"
+        crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.min.js"
+        integrity="sha384-BBtl+eGJRgqQAUMxJ7pMwbEyER4l1g+O15P+16Ep7Q9Q+zqX6gSbd85u4mG4QzX+"
+        crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+    <style>
+        .google {
+            border: 1px solid black;
+        }
+
+        .md1 {
+            border-radius: 50px;
+        }
+    </style>
+</head>
+
+<body>
+    <!-- <h1>Hello, world!</h1> -->
+    <nav class="navbar navbar-expand-lg bg-body-tertiary">
+        <div class="container-fluid">
+            <!-- <a class="navbar-brand" href="#">Navbar</a> -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <!-- <a class="nav-link active" aria-current="page" href="#">Home</a> -->
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link" href="#">Link</a> -->
+                    </li>
+                    <li class="nav-item dropdown">
+                        <!-- <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+                  Dropdown
+                </a> -->
+                        <ul class="dropdown-menu">
+                            <!-- <li><a class="dropdown-item" href="#">Action</a></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">Another action</a></li> -->
+                            <!-- <li><hr class="dropdown-divider"></li> -->
+                            <!-- <li><a class="dropdown-item" href="#">Something else here</a></li> -->
+                        </ul>
+                    </li>
+                    <li class="nav-item">
+                        <!-- <a class="nav-link disabled" aria-disabled="true">Disabled</a> -->
+                    </li>
+                </ul>
+                <form class="d-flex" role="search">
+                    <a href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#inbox"
+                        style="text-decoration: none;color: gray;">
+                        <div style="font-size: smaller;margin-top: 20px;margin-right: 10px;">Gmail</div>
+                    </a>
+                    <a href="https://www.google.com/imghp?hl=en&tab=ri&authuser=0&ogbl"
+                        style="text-decoration: none;color: gray;">
+                        <div style="font-size: smaller;margin-top:20px;margin-right: 10px;">Images</div>
+                    </a>
+
+                    <a href="https://labs.google.com/search/error?source=ntp&authuser=0&is=i"
+                        style="text-decoration: none;color: gray;">
+                        <div style="margin-top: 17px;"><img src="pics/flask (1).png" alt="" height="30px" width="30px">
+                        </div>
+                    </a>
+
+                    <!-- <div style="margin-top: 10px;margin-right: 15px;"><img src="pics/flask (2).png" alt="" height="25px"
+                width="25px"></div> -->
+
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#exampleModal">
+                        <!-- <a href="https://labs.google.com/search/error?source=ntp&authuser=0&is=i"> -->
+                        <div style="margin-top: 10px;"><img src="pics/flask (2).png" alt="" height="25px" width="25px">
+                        </div>
+                    </button>
+                    <button type="button" class="btn" data-bs-toggle="modal" data-bs-target="#modal2">
+                        <div style="margin-top: 10px"><img src="pics/Nikhil.png" alt=""
+                                height="30px" width="30px" style="border-radius: 50%;"></div>
+                    </button>
+                </form>
+            </div>
+        </div>
+    </nav>
+    <br><br>
+    <div style="display: flex;justify-content: center;align-items: center;font-size: 200px;">
+        <div style="height: 230px;"><img src="pics/google.png" alt=""></div>
+    </div>
+    <br>
+    <center>
+        <!-- <div style="width: 500px;height: 50px;border: 1px solid black;border-radius: 10%;"></div> -->
+        <input type="text"
+            style="width: 500px;height: 50px;border: 1px solid black;box-shadow: inset;border-radius: 50px;"
+            placeholder="&nbsp;&nbsp;&nbsp;Search Google or type a URL" id="searchme" class="search" title="Search">
+            
+            <div style="display: flex;gap: 20px;justify-content: center;"><div class="button left"></div>
+            <div class="button right"></div>
+        </div>
+    </center>
+    <center>
+        <br>
+        <div style="display: flex;gap: 20px;justify-content: center;align-items: center;">
+            <a href="https://www.youtube.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090735.png" alt="" style="border-radius: 50%;">
+                    <div>(49) Youtube</div>
+                </div>
+            </a>
+            <a href="https://www.codingninjas.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090746.png" alt="" style="border-radius: 50%;">
+                    <div>Coding Ninjas</div>
+                </div>
+            </a>
+            <a href="https://getbootstrap.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090753.png" alt="" style="border-radius: 50%;">
+                    <div>Bootstrap - T...</div>
+                </div>
+            </a>
+            <a href="https://www.google.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090759.png" alt="" style="border-radius: 50%;">
+                    <div>Google</div>
+                </div>
+            </a>
+            <a href="https://www.onlinegdb.com/online_python_compiler" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 213418.png" alt="" style="border-radius: 200%;">
+                    <div>online editor</div>
+                </div>
+            </a>
+        </div>
+
+        <div style="display: flex;gap: 20px;justify-content: center;align-items: center;">
+            <a href="https://colab.research.google.com/drive/1GoAMLCEbhi2yprpQi_arK-Xe1nL--OAs?authuser=0"
+                style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090828.png" alt="" style="border-radius: 50%;">
+                    <div>Google Colab</div>
+                </div>
+            </a>
+            <a href="https://www.udemy.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 213638.png" alt="" style="border-radius: 1900px;">
+                    <div>Online Courses</div>
+                </div>
+            </a>
+            <a href="https://www.jiocinema.com/" style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 213739.png" alt="" style="border-radius: 1500px;">
+                    <div>JioCinema</div>
+                </div>
+            </a>
+            <a href="https://accounts.google.com/v3/signin/confirmidentifier?authuser=1&continue=https%3A%2F%2Fdocs.google.com%2Fforms%2Fu%2F1%2Fd%2Fe%2F1FAIpQLSeNF59QvF4uzy6l_5Ny1bmnQrkW4yudg0ecnqY"
+                style="text-decoration: none;color: grey;">
+                <div><img src="pics/Screenshot 2023-10-10 090843.png" alt="" style="border-radius: 50%;">
+                    <div>Google Forms</div>
+                </div>
+            </a>
+            <div style="margin-bottom: 18px;"><img src="pics/Screenshot 2023-10-10 090946.png" alt=""
+                    style="border-radius: 50%; cursor: pointer;">
+                <div style="cursor: pointer; text-decoration: none;color: grey;">Add shortcut</div>
+            </div>
+        </div>
+    </center>
+    <div
+        style="border: 1px solid black;width: 190px;float: right;margin-right: 25px;color: #0b57d0;border-radius: 25px;">
+        <div style="display: flex;gap: 15px;">
+            <div><img src="pics/pencil.png" style="border-radius: 70%;margin-left: 5px;" height="15px" width="15px"
+                    alt=""></div>
+            <div>
+                <center>Customize Chrome</center>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" tabindex="-1" id="modal2"
+        style="width: 450px;margin-left: 1050px;height: 600px;margin-top: 50px;background-color: gray;">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title">
+                        <center>nikhilgoyal0628@gmail.com</center>
+                    </h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div>
+                    <!-- <p>Modal body text goes here.</p> -->
+                    <center><img style="border-radius: 50%;" src="pics/Nikhil.png" alt=""></center>
+
+                    <center>
+                        <div>
+                            <h3>Hi, Nikhil!</h3>
+                        </div>
+                    </center>
+                    <center>
+                        <a href="https://myaccount.google.com/?hl=en&utm_source=OGB&utm_medium=act"
+                            style="text-decoration: none;">
+                            <div style="border: 1px solid black;border-radius:50px ;width: 250px;">
+                                Manage your Google Account
+                            </div>
+                        </a>
+                    </center>
+
+                    <div style="margin-top: 5px;">
+                        <div>Hide more accounts</div>
+                        <br>
+                        <div style="display: flex;gap: 20px;">
+                            <div style="margin-top: 5px;">
+                                <img style="border-radius: 50%;" src="pics/Nikhil.png" height="30px" width="30px"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div>NIKHIL GOYAL</div>
+                                <div>nikhil0751.be23@chitkara.edu.in</div>
+                            </div>
+                            <div>Session expired</div>
+                        </div>
+                        <div style="display: flex;gap: 20px;">
+                            <div style="margin-top: 5px;">
+                                <img style="border-radius: 50%;" src="pics/Nikhil.png" height="30px" width="30px"
+                                    alt="">
+                            </div>
+                            <div>
+                                <div>NIKHIL GOYAL</div>
+                                <div>nikhil0751.be23@chitkara.edu.in</div>
+                            </div>
+                            <div>Session expired</div>
+                        </div>
+
+                        <div style="display: flex;gap: 20px;">
+                            <div style="color: rgb(99, 99, 247);">
+                                <h1>+</h1>
+                            </div>
+                            <div style="margin-top: 14px;">Add another account</div>
+                        </div>
+                        <div style="display: flex;gap: 20px;">
+                            <div><h4>[-></h4></div>
+                            <div>Sign out</div>
+                        </div>
+                    </div>
+                </div>
+                <div class="modal-footer">
+                    <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                    <!-- <button type="button" class="btn btn-primary">Save changes</button> -->
+                    
+                        <div style="display: flex;gap: 10px;margin-right: 100px;">
+                            <a href="https://policies.google.com/privacy?hl=en">
+                                <div style="color: gray">Privacy Policy</div>
+                            </a>
+                            <div>.</div>
+                            <a href="https://policies.google.com/terms?hl=en">
+                                <div style="color: gray">Terms of Service</div>
+                            </a>
+                        </div>
+                    
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- ============================================== -->
+    <div class="modal fade" tabindex="-1" id="exampleModal"
+        style="width: 380px;margin-left: 1130px;height: 500px;margin-top: 50px;">
+        <div class="modal-dialog  modal-dialog-scrollable">
+            <div class="modal-content">
+                <div class="modal-header">
+
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <center>
+
+                        <div style="display: flex; gap: 70px;">
+                            <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                                style="text-decoration: none; color: grey;">
+                                <div class="box">
+                                    <div><img src="pics/Nikhil.png" height="50px" width="50px"
+                                            style="border-radius: 50%;"></div>
+                                    <div>
+                                        <center>Account</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://myaccount.google.com/?utm_source=OGB&utm_medium=app"
+                                style="text-decoration: none; color: grey;">
+                                <div class="box">
+                                    <div><img src="pics/google1.png" alt="" height="50px" width="50px"></div>
+                                    <div>
+                                        <center>Search</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.google.com/maps/@31.0268163,75.4110207,8z?authuser=0&entry=ttu"
+                                style="text-decoration: none; color: grey;">
+                                <div class="box">
+                                    <div><img
+                                            src="https://i.pinimg.com/originals/66/1e/98/661e98a8e38f681575da93d0a1c3f4fc.png"
+                                            alt="" height="50px" width="50px"></div>
+                                    <div>
+                                        <center>Maps</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://www.youtube.com/" style="text-decoration: none; color: grey;">
+                        </div>
+                        <br>
+                        <div style="display: flex; gap: 70px;">
+
+                            <div class="box">
+                                <div><img src="pics/youtube1.avif" height="50px" width="50px" style="cursor: pointer;">
+                                </div>
+                                <div>
+                                    <center>Youtube</center>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="https://play.google.com/store/games?device=windows"
+                                style="text-decoration: none; color: grey;">
+                                <div class="box">
+                                    <div><img src="pics/Playstore.png" alt="" height="50px" width="50px"
+                                            style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Play</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://news.google.com/home?hl=en-IN&gl=IN&ceid=IN:en"
+                                style="text-decoration: none; color: grey;">
+                                <div class="box">
+                                    <div><img
+                                            src="https://e7.pngegg.com/pngimages/432/578/png-clipart-google-news-google-i-o-mobile-app-google-blue-angle-thumbnail.png"
+                                            alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>News</center>
+                                    </div>
+                                </div>
+                            </a>
+                        </div>
+                        <br>
+                        <div style="display: flex; gap: 70px;">
+                            <a href="https://mail.google.com/mail/u/0/#inbox"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img src="pics/Gmail.webp" alt="" height="50px" width="50px"
+                                            style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Gmail</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://meet.google.com/?hs=197&authuser=0"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img
+                                            src="https://cdn4.iconfinder.com/data/icons/logos-brands-in-colors/48/google-meet-512.png"
+                                            alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Meet</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://mail.google.com/chat/u/0/#onboarding"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img src="pics/Google Chat.png" alt="" height="50px" width="50px"
+                                            style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Chat</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://contacts.google.com/" style="text-decoration: none; color: grey;">
+                        </div>
+                        <br>
+                        <div style="display: flex; gap: 70px;">
+                            <div>
+                                <div><img
+                                        src="https://play-lh.googleusercontent.com/fvhPW8dpGXM42Y-6aQU8Yl25L1l_mVgeoM-n08FxAkM7umAHkNs8wcs4MA49E67a7WVt"
+                                        alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                <div>
+                                    <center>Contacts</center>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="https://drive.google.com/drive/u/0/my-drive"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img src="pics/Google Drive.png" alt="" height="50px" width="50px"
+                                            style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Drive</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://calendar.google.com/calendar/u/0/r"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img
+                                            src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Google_Calendar_icon_%282020%29.svg/2048px-Google_Calendar_icon_%282020%29.svg.png"
+                                            alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Calendar</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://translate.google.com/" style="text-decoration: none; color: grey;">
+                        </div>
+                        <br>
+                        <div style="display: flex; gap: 70px;">
+                            <div>
+                                <div><img
+                                        src="https://upload.wikimedia.org/wikipedia/commons/thumb/d/d7/Google_Translate_logo.svg/2048px-Google_Translate_logo.svg.png"
+                                        alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                <div>
+                                    <center>Translate</center>
+                                </div>
+                            </div>
+                            </a>
+                            <a href="https://photos.google.com/" style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTboXiVFCNiXKR7yMTGBBhfwGzYBDVvCHqxVed5KsDBmw&s"
+                                            alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>Photos</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://myadcenter.google.com/kids?ref=app-launcher"
+                                style="text-decoration: none; color: grey;">
+                                <div>
+                                    <div><img
+                                            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRfGexbik4rL1WnXKLTIpVMbz7BXK0bTV5ZlknRYzmUXg&s"
+                                            alt="" height="50px" width="50px" style="cursor: pointer;"></div>
+                                    <div>
+                                        <center>My Ad Ce..</center>
+                                    </div>
+                                </div>
+                            </a>
+                            <a href="https://shopping.google.com/?nord=1&pli=1"
+                                style="text-decoration: none; color: grey;">
+                        </div>
+                    </center>
+                    <br>
+                    <div>
+                        <div><img src="https://cdn.worldvectorlogo.com/logos/google-shopping.svg" alt="" height="50px"
+                                width="50px" style="cursor: pointer;">
+                        </div>
+                        <div>Shopping</div>
+                    </div>
+                    <hr>
+                    <div style="display: flex;">
+                        <a href="https://www.google.com/finance/?authuser=0"
+                            style="text-decoration: none; color: grey;">
+                            <div>
+
+                                <div><img
+                                        src="https://branditechture.agency/brand-logos/wp-content/uploads/2022/06/Google-Finance-1024x784.png"
+                                        height="70px" width="90px" salt=""></div>
+                                <div>
+                                    <center>Finance</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/document/u/0/" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 18px;margin-left: 50px;">
+                                <div> <img src="pics/Docs.png" alt="" height="55px" width="40px"></div>
+                                <div>
+                                    <center>Docs</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://docs.google.com/spreadsheets/u/0/" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 10px;margin-left: 90px;">
+                                <div><img src="pics/Sheets.png" height="60px" width="55px"></div>
+                                <div>
+                                    <center>Sheets</center>
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <a href="https://docs.google.com/presentation/u/0/" style="text-decoration: none; color: grey;"></a>
+                    <div style="display: flex; gap: 70px;">
+
+                        <div style="margin-top: 10px;">
+                            <div><img src="pics/slides.png" alt="" height="60px" width="45px"></div>
+                            <div>
+                                <center style="color: grey;">Slides</center>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://books.google.com/?authuser=0" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 10px;margin-left: 15px;">
+                                <div><img src="pics/Books.png" alt="" height="60+px" width="60px"></div>
+                                <div>
+                                    <center>Books</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://www.blogger.com/about/?bpli=1" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 22px;">
+                                <div><img src="pics/Blogger.png" alt="" height="50px" width="50px"></div>
+                                <div>
+                                    <center>Blogger</center>
+                                </div>
+                            </div>
+                        </a>
+
+                    </div>
+                    <br>
+                    <div style="display: flex; gap: 70px;">
+                        <a href="https://keep.google.com/u/0/" style="text-decoration: none; color:grey;">
+                            <div style="margin-top: 10px;">
+                                <div><img src="pics/keep.png" alt="" height="50px" width="50px"></div>
+                                <div>
+                                    <center>Keep</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://jamboard.google.com/u/0/?pli=1" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 10px;">
+                                <div><img src="pics/Jamboard.webp" alt="" height="50px" width="50px"></div>
+                                <div>
+                                    <center>Jamboard</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://classroom.google.com/" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 10px;">
+                                <div><img src="pics/Classroom.png" alt="" height="50px" width="50px"></div>
+                                <div style="right: 40;">
+                                    Classroom
+                                </div>
+                            </div>
+                        </a>
+                    </div>
+                    <br>
+                    <div style="display: flex;" style="text-decoration: none; color: grey;">
+                        <a
+                            href="https://earth.google.com/web/@0,-4.30190015,0a,22251752.77375655d,35y,0h,0t,0r/data=OgMKATA"></a>
+                        <div style="margin-top: 10px;">
+
+                            <div><img src="pics/Earth.jpg" alt="" height="50px" width="50px"></div>
+                            <div>
+                                <center style="color: grey;">Earth</center>
+                            </div>
+                        </div>
+                        </a>
+                        <a href="https://www.google.com/save?authuser=0" style="text-decoration: none; color: grey;">
+                            <div style="margin-top: 10px;margin-left: 80px;">
+                                <div>
+                                    <center><img src="pics/saved.png" alt="" height="50px" width="50px"></center>
+                                </div>
+                                <div>
+                                    <center>Saved</center>
+                                </div>
+                            </div>
+                        </a>
+                        <a href="https://artsandculture.google.com/" style="text-decoration: none; "></a>
+                        <div style="margin-top: 10px;margin-left: 80px;">
+
+                            <div><img src="pics/Arts and Culture.png" alt="" height="50px" width="50px"></div>
+                            <div>
+                                <center style="color: grey;">Arts and ...</center>
+                            </div>
+                        </div>
+                        </a>
+                    </div>
+                    <br>
+                    <a href="https://ads.google.com/home/?subid=ww-ww-xs-ip-awhc-a-ogb_cons%21o2&authuser=0"
+                        style="text-decoration: none; color: grey;">
+                        <div style="display: flex; gap: 40px;">
+
+                            <div style="margin-top: 10px;">
+                                <div><img src="pics/Ads.jpg" alt="" height="50px" width="55px"></div>
+                                <div>
+                                    <center>Google Ads</center>
+                                </div>
+                            </div>
+                    </a>
+                    <a href="https://one.google.com/?utm_source=app_launcher&utm_medium=web&utm_campaign=all&utm_content=google_oo"
+                        style="text-decoration: none; color: grey;">
+                        <div style="margin-top: 10px;">
+
+                            <div><img src="pics/Google One.png" alt="" height="50px" width="80px"></div>
+                            <div>
+                                <center>Google O...</center>
+                            </div>
+                        </div>
+                    </a>
+                    <a href="https://www.google.com/travel/?dest_src=al&authuser=0"
+                        style="text-decoration: none; color: grey;">
+                        <div style="margin-top: 10px;margin-left: 20px;">
+                            <div><img src="pics/Travel.jpg" alt="" height="50px" width="50px"></div>
+                            <div>
+                                <center>Travel</center>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <br>
+                <a href="https://docs.google.com/forms/u/0/" style="text-decoration: none; color: grey;">
+                    <div style="display: flex; gap: 50px;">
+                        <div style="margin-top: 10px;">
+                            <div><img src="pics/Formss.webp" alt="" height="50px" width="50px"></div>
+                            <div>
+                                <center>Forms</center>
+                            </div>
+                        </div>
+                </a>
+                <a href="https://store.google.com/?utm_source=app_launcher&utm_medium=google_oo&utm_campaign=GS107345&pli=1&hl=en-GB"
+                    style="text-decoration: none; color: grey;">
+                    <div style="margin-top: 10px;margin-left: 20px;">
+                        <div><img src="pics/google store.png" height="50px" width="50px" alt=""></div>
+                        <div>
+                            <center>Google St...</center>
+                        </div>
+                    </div>
+                </a>
+                <a href="https://chrome.google.com/webstore/category/extensions?utm_source=app-launcher&authuser=0"
+                    style="text-decoration: none; color: grey;">
+                    <div style="margin-top: 10px;margin-left: 15px;">
+                        <div><img src="pics/web store.png" alt="" height="50px" width="50px"></div>
+                        <div>
+                            <center>Chrome ...</center>
+                        </div>
+                    </div>
+                </a>
+            </div>
+            <br>
+            <a href="https://passwords.google.com/?utm_source=OGB&utm_medium=AL&pli=1"
+                style="text-decoration: none; color: grey;">
+                <div style="margin-top: 10px;">
+                    <div><img src="pics/key.png" alt="" height="50px" width="50px"></div>
+                    <div>Password ...</div>
+                </div>
+            </a>
+            <hr>
+            <center>
+                <a href="https://about.google/products/" style="text-decoration: none;">
+                    <div
+                        style="border: 1px solid black;border-radius: 5px;width: 150px;height: 30px;align-content: center;color: #0b57d0;">
+                        More from Google</div>
+                </a>
+            </center>
+
+        </div>
+
+
+    </div>
+
+
+<script>
+    $(document).ready(function() {
+    var gsearch = function() {
+    var url = 'https://www.google.com/search?q=' + document.getElementById('searchme').value;
+    window.open(url, 'google');
+    };
+    var glucky = function() {
+    var url = 'https://www.google.com/search?q=' + document.getElementById('searchme').value + '&btnI';
+    window.open(url, 'google');
+    };
+    // $(".left").click(gsearch);
+    // $(".right").click(glucky);
+    $("#searchme").keypress(function(e) {
+    if (e.which == 13) {
+    gsearch();
+    }
+    });
+    });
+</script>
+    <!--! ==================== -->
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="...">
+
+    <!-- Bootstrap JS (Popper.js and Bootstrap JS) -->
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="..." crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="..."
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
