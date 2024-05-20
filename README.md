@@ -47,3 +47,28 @@ This project, titled "The Replica of Google", aims to create a simplified versio
 10. Analytics and Feedback
    Search Analytics: Tracks search trends and popular queries to improve the search algorithm.
    User Feedback: Provides options for users to give feedback on search results to continually improve the service.
+
+### Dependencies ###
+
+### Frontend
+- HTML5: Markup language for structuring and presenting content.
+- CSS3: Styling language for describing the presentation of the HTML.
+- JavaScript: Programming language to create dynamic and interactive web content.
+- Bootstrap: CSS framework for responsive design and pre-built components.
+- jQuery: JavaScript library for simplifying HTML DOM tree traversal and manipulation.
+
+### Backend
+- Node.js: JavaScript runtime built on Chrome's V8 JavaScript engine.
+- Express.js: Web application framework for Node.js.
+- MongoDB: NoSQL database for storing search results and user data (if applicable).
+- Mongoose: Object Data Modeling (ODM) library for MongoDB and Node.js.
+- Body-Parser: Node.js middleware for parsing incoming request bodies.
+- Axios: Promise-based HTTP client for the browser and Node.js, used for making API requests.
+
+### Additional Tools
+- Git: Version control system for tracking changes in the source code.
+- npm (Node Package Manager): Package manager for JavaScript, included with Node.js.
+- Webpack: Module bundler for JavaScript.
+- Babel: JavaScript compiler for using next-generation JavaScript today.
+- ESLint: Linting tool for identifying and fixing JavaScript code issues.
+
